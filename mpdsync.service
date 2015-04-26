@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts the MPD Sync script
+
+[Service]
+ExecStart=/usr/bin/python3 /root/mpdsync.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
